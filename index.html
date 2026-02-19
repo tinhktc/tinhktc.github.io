@@ -3,31 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <!-- Primary SEO -->
+
   <title>FitSense Lab | Wellness Apps for Sleep & Focus</title>
-  <meta name="description" content="FitSense Lab builds simple, lightweight wellness apps for sleep and focus. Multi-language, fast, and privacy-minded." />
+  <meta name="description" content="Simple, lightweight wellness apps for sleep and focus." />
   <link rel="canonical" href="https://tinhktc.github.io/" />
-  
-  <!-- Indexing -->
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="FitSense Lab" />
-  <meta property="og:title" content="FitSense Lab | Wellness Apps for Sleep & Focus" />
-  <meta property="og:description" content="Simple, lightweight wellness apps for sleep and focus." />
-  <meta property="og:url" content="https://tinhktc.github.io/" />
-  <meta property="og:image" content="https://tinhktc.github.io/assets/og-cover.png" />
-  
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="FitSense Lab | Wellness Apps for Sleep & Focus" />
-  <meta name="twitter:description" content="Simple, lightweight wellness apps for sleep and focus." />
-  <meta name="twitter:image" content="https://tinhktc.github.io/assets/og-cover.png" />
-  
-  <!-- Favicons -->
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="robots" content="index,follow" />
+
   <style>
     :root{
       --bg:#0b1020; --text:#e9edff; --muted:#aab3d6;
@@ -43,49 +24,98 @@
         radial-gradient(900px 520px at 80% 10%, rgba(167,139,250,.16), transparent 55%),
         var(--bg);
     }
+
     a{color:inherit;text-decoration:none}
+
     .wrap{max-width:1000px;margin:0 auto;padding:22px}
     .nav{display:flex;justify-content:space-between;align-items:center}
     .brand{font-weight:700}
+
     .btn{
-      display:inline-flex;align-items:center;
-      padding:10px 14px;border:1px solid var(--border);
-      border-radius:999px;background:rgba(255,255,255,.04)
+      display:inline-flex;
+      padding:9px 14px;
+      border:1px solid var(--border);
+      border-radius:999px;
+      background:rgba(255,255,255,.05);
+      margin-right:8px;
+      margin-top:8px;
+      font-size:14px;
     }
+
     .btn.primary{
-      border-color:rgba(103,232,249,.35);
-      background:rgba(103,232,249,.10)
+      border-color:rgba(103,232,249,.4);
+      background:rgba(103,232,249,.12);
     }
+
     .hero{padding:60px 0 20px}
-    h1{margin:0 0 12px;font-size:40px;line-height:1.1}
-    .sub{color:var(--muted);max-width:700px}
+    h1{margin:0 0 12px;font-size:38px}
+    .sub{color:var(--muted);max-width:720px;margin:0}
+
     .section{padding:30px 0 10px}
-    .section h2{font-size:16px;color:var(--muted);margin:0 0 12px}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .section h2{
+      font-size:14px;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      color:var(--muted);
+      margin-bottom:14px;
+    }
+
+    .grid{
+	  display:flex;
+	  flex-direction:column;
+	  gap:24px;
+	}
+
     .card{
       background:rgba(255,255,255,.04);
       border:1px solid var(--border);
-      border-radius:16px;padding:16px
+      border-radius:16px;
+      padding:18px;
     }
-    .title{margin:0 0 6px;font-weight:700}
-    .desc{margin:0 0 12px;color:var(--muted)}
-    .shots{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
-    .shot{
-      border-radius:14px;overflow:hidden;
-      border:1px solid var(--border)
+
+    .title{
+      margin:0 0 6px;
+      font-weight:600;
+      font-size:18px;
     }
-    .shot img{width:100%;display:block}
+
+    .desc{
+      margin:0 0 14px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .screens{
+	  display:grid;
+	  grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
+	  gap:10px;
+	}
+
+	.screens img{
+	  width:100%;
+	  height:auto;
+	  border-radius:14px;
+	  border:1px solid var(--border);
+	}
+
     footer{
-      padding:30px 0;color:var(--muted);
-      display:flex;justify-content:space-between;flex-wrap:wrap
+      padding:30px 0;
+      color:var(--muted);
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:10px;
+      font-size:14px;
     }
-    @media (max-width:800px){
+
+    @media (max-width:850px){
       .grid{grid-template-columns:1fr}
-      .shots{grid-template-columns:1fr}
-      h1{font-size:32px}
+      .screens img{height:220px}
+      h1{font-size:30px}
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
 
@@ -97,48 +127,60 @@
     <header class="hero">
       <h1>Wellness apps for sleep and focus.</h1>
       <p class="sub">
-        Simple, lightweight, multi-language apps designed to help you relax,
-        concentrate, and build better daily habits.
+        Calm design. Clean sound. Built to improve your daily routine.
       </p>
     </header>
 
     <section class="section">
       <h2>Apps</h2>
+
       <div class="grid">
 
+        <!-- Sleep Sounds -->
         <div class="card">
           <p class="title">Sleep Sounds - Rain & Noise</p>
           <p class="desc">
             Drift into deep sleep with calming rain, white noise, and nature soundscapes.
           </p>
-          <a class="btn primary" href="https://apps.apple.com/us/app/sleep-sounds-rain-noise/id6758705682" target="_blank">App Store</a>
-          <a class="btn" href="https://play.google.com/store/apps/details?id=com.sleepsounds.sleepsounds" target="_blank">Google Play</a>
+
+          <div class="screens">
+		  
+            <img src="iOSstore_SS1.jpg" alt="Sleep Sounds home screen">
+            <img src="iOSstore_SS2.jpg" alt="Sleep Sounds sound library">
+			<img src="iOSstore_SS4.jpg" alt="Sleep Sounds sound library">
+          </div>
+
+          <a class="btn primary"
+             href="https://apps.apple.com/us/app/sleep-sounds-rain-noise/id6758705682"
+             target="_blank" rel="noopener noreferrer">App Store</a>
+
+          <a class="btn"
+             href="https://play.google.com/store/apps/details?id=com.sleepsounds.sleepsounds"
+             target="_blank" rel="noopener noreferrer">Google Play</a>
         </div>
 
+        <!-- Focus Flow -->
         <div class="card">
           <p class="title">Focus Flow: Study Focus Sounds</p>
           <p class="desc">
-            Boost focus and productivity with White Noise, Binaural Beats, and Nature Sounds
+            Boost focus and productivity with White Noise, Binaural Beats, and Nature Sounds.
           </p>
-          <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.focusflow.brainwave.mixer.sounds" target="_blank">App Store</a>
-          <a class="btn" href="https://play.google.com/store/apps/details?id=com.focusflow.brainwave.mixer.sounds" target="_blank">Google Play</a>
+
+          <div class="screens">
+            <img src="SC2.jpg" alt="Focus Flow timer screen">
+            <img src="SC3.jpg" alt="Focus Flow session screen">
+            <img src="SC4.jpg" alt="Focus Flow sound mixer">
+          </div>
+
+          <a class="btn primary"
+             href="#"
+             target="_blank" rel="noopener noreferrer">App Store</a>
+
+          <a class="btn"
+             href="https://play.google.com/store/apps/details?id=com.focusflow.brainwave.mixer.sounds"
+             target="_blank" rel="noopener noreferrer">Google Play</a>
         </div>
 
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="shots">
-        <a class="shot" href="TODO:SCREENSHOT_LINK_1" target="_blank">
-          <img src="TODO:SCREENSHOT_IMG_1" alt="Screenshot 1">
-        </a>
-        <a class="shot" href="TODO:SCREENSHOT_LINK_2" target="_blank">
-          <img src="TODO:SCREENSHOT_IMG_2" alt="Screenshot 2">
-        </a>
-        <a class="shot" href="TODO:SCREENSHOT_LINK_3" target="_blank">
-          <img src="TODO:SCREENSHOT_IMG_3" alt="Screenshot 3">
-        </a>
       </div>
     </section>
 
@@ -149,15 +191,13 @@
           For inquiries or collaboration, feel free to reach out.
         </p>
         <a class="btn primary" href="mailto:gotein278@gmail.com">Email</a>
-        <a class="btn" href="https://github.com/tinhktc" target="_blank">GitHub</a>
+        <a class="btn" href="https://github.com/tinhktc" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </section>
 
     <footer>
       <div>© <span id="y"></span> FitSense Lab</div>
-      <div>
-        <a href="/privacy">Privacy</a>
-      </div>
+      <div><a href="/privacy">Privacy</a></div>
     </footer>
 
   </div>
@@ -165,5 +205,6 @@
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
